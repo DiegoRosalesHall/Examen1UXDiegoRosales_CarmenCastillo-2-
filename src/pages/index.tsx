@@ -29,6 +29,36 @@ export default function Home() {
 
   const [hover, setHover] = useState(false);
 
+
+  const Destacados = [
+    "../img/dest1.webp",
+    '../img/dest2.webp',
+    '../img/dest3.webp',
+    '../img/dest4.webp',
+    '../img/dest5.webp',
+    '../img/dest6.webp',
+    '../img/dest7.webp',
+    '../img/dest8.webp',
+    '../img/dest9.webp',
+    '../img/dest10.webp',
+  ];
+  const SoloParaTi = [
+    '../img/dest11.webp',
+    '../img/dest12.webp',
+    '../img/dest13.webp',
+    '../img/dest14.webp',
+    '../img/dest15.webp',
+    '../img/dest16.webp',
+    '../img/dest17.webp',
+    '../img/dest18.jpeg',
+    '../img/dest19.webp',
+    '../img/dest20.webp',
+  ];
+  const continuarViendo = [
+    '../img/continuarviendo1.webp',
+    '../img/continuarviendo2.webp'
+  ];
+
   return (
     //FrontEnd
 
@@ -85,13 +115,27 @@ export default function Home() {
         </div>
         <div className="row align-items-center gx-0">
           <div >
-            <h1> aqui ira el carrusel2</h1>
-            <div className="row align-items-center gx-0">
+            <h2 style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)', fontWeight: 'bold', color: 'white', textAlign:"left", paddingLeft:"1vw", paddingTop:"1vw" }}>Destacados </h2>
               <div className="col">
-                
-                <MovieCarousel />
+                <MovieCarousel imagenes={Destacados} tipo="normal" />
               </div>
-            </div>
+          </div>
+        </div>
+        <div className="row align-items-center gx-0">
+          <div >
+            <h2 style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)', fontWeight: 'bold', color: 'white', textAlign:"left", paddingLeft:"1vw" }}>Solo para ti </h2>
+              <div className="col">
+                <MovieCarousel imagenes={SoloParaTi} tipo="normal" />
+              </div>
+          </div>
+        </div>
+        <div className="row align-items-center gx-0">
+          <div >
+            <h2 style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)', fontWeight: 'bold', color: 'white', textAlign:"left", paddingLeft:"1vw" }}> Continuar viendo </h2>
+              <div className="col">
+                <MovieCarousel imagenes={continuarViendo} tipo="wide"/>
+              </div>
+              
           </div>
         </div>
       </div>

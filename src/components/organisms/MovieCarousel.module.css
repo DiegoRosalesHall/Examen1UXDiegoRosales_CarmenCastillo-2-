@@ -1,24 +1,24 @@
-.movieCar-wrapper {
+.movieCarWrapper {
   position: relative;
   width: 100%;
+  overflow: hidden; /* Quita el scroll visible */
 }
 
-.movieCar-container {
-  overflow-x: auto;
-  white-space: nowrap;
-  display: inline-flex;
-  scroll-snap-type: x mandatory;
+.movieCarContainer {
+  display: flex;
   gap: 10px;
-  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: hidden;
 }
 
-.movieCar-item {
+.movieCarItem {
   flex: 0 0 auto;
   scroll-snap-align: start;
   margin: 10px;
 }
 
 .scrollButton {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   color: white;
@@ -27,4 +27,14 @@
   padding: 8px 12px;
   cursor: pointer;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./movieButton.module.css";
+import styles from "./MovieButton.module.css";
 const MovieButton: React.FC<{clase:string, img:string }> = ({clase,img}) =>{
     return (
     <button className={`${styles.MovieButton} ${clase}`}>
