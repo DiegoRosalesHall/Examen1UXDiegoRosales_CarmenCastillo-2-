@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'medium';
+    src: url('/fonts/FiraSans-Medium.ttf') format('truetype');
+}
+
+.boton {
+    display: flex;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 10px;
+    background-color: rgba(61, 58, 55, 0.6) !important;
+    font-family: 'medium', sans-serif !important;
+}
+
+.tituloimagen {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+}
+
+.descripcion {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.boton:hover {
+    background-color: #7a7a78;
+}
+
+/* pantallas grandes */
+@media (min-width: 1080px) {
+
+    .tituloimagen {
+        max-width: 600px !important;
+        height: auto;
+        display: block;
+    }
+
+    .contenedortitulo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        left: 140px;
+        top: 30%;
+    }
+
+    .descripcion {
+        white-space: pre-wrap;
+        text-align: left;
+    }
+
+    .boton {
+        background-color: rgba(61, 58, 55, 0.6) !important;
+        display: flex;
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: left;
+        padding: 10px 30px;
+        border: none !important;
+        font-family: 'medium', sans-serif !important;
+    }
+    .boton:hover {
+    background-color: rgba(122, 122, 120, 0.6) !important;
+}
+}
+
+@media (max-width: 768px) {
+    .descripcion {
+        white-space: pre-wrap;
+        text-align: left;
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    .boton {
+        display: inline-block;
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        padding: 5px 10px;
+        background-color: rgba(61, 58, 55, 0.6) !important;
+        font-family: 'medium', sans-serif !important;
+    }
+
+    .contenedortitulo {
+        justify-content: flex-start;
+    }
+
+    .tituloimagen {
+        max-width: 250px;
+        height: auto;
+        display: inline-block;
+    }
+
+    .carruselimage {
+        height: 550px;
+        object-fit: cover;
+    }
+    .boton:hover {
+    background-color: rgba(122, 122, 120, 0.6) !important;
+}
+}

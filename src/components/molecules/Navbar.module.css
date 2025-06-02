@@ -1,0 +1,22 @@
+.link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.link:hover,
+.link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.idk {
+  background: transparent !important; 
+  position: absolute !important; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; 
+}

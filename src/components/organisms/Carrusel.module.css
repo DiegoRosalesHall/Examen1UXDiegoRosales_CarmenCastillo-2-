@@ -1,0 +1,22 @@
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carouselitem img {
+  width: 100%;
+  height: 100vh; 
+  object-fit: cover;
+}
+
+@media (min-width: 1080px) { /* pantallas grandes */
+  .carouselcontrolpre {
+    left: -90px; 
+    top: -35%;
+  }
+
+  .carouselcontrolsig {
+    right: -90px; 
+    top: -35%;
+  }
+}
