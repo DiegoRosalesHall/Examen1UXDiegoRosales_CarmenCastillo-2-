@@ -12,6 +12,7 @@ import style from "@/components/molecules/Navbar.module.css";
 import Carrusel from "@/components/organisms/carrusel";
 import MovieCarousel from "@/components/organisms/MovieCarousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ButtonImg from "@/components/atoms/buttonImg";
 import { useEffect, useState } from 'react';
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -87,9 +88,7 @@ export default function Home() {
 
   return (
     //FrontEnd
-
     <center>
-
       <div
         style={{
           position: 'fixed',
@@ -120,7 +119,12 @@ export default function Home() {
             <img src="/img/logomax.png" alt="Logo" style={{ height: "40px" }} />
           </div>
           <div className="col-6 col-lg-4 d-flex justify-content-end pe-4 order-2 order-lg-3">
-            <h1 style={{ color: "white", fontSize: "1.2rem", margin: 0 }}>algo mas</h1>
+            <div>
+              <ButtonImg  img="/img/buscar.webp"/>
+              <ButtonImg  img="/img/guardados.webp"/>
+              <ButtonImg  img="/img/user.webp"/>
+            
+            </div>
           </div>
           <div
             className="col-12 col-lg-4 d-flex justify-content-center order-3 order-lg-2"

@@ -1,0 +1,18 @@
+.container {
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  cursor: default;
+  height: 25px;
+  width: 25px;
+  transition: cursor 0.2s ease;
+  margin:10px;
+  filter: brightness(0.5);
+}
+
+.image:hover {
+  cursor: pointer;
+  filter: brightness(1.3);
+}
