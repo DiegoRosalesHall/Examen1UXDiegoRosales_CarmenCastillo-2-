@@ -48,7 +48,7 @@ const OptionsMenu: React.FC = () => {
               whiteSpace: 'nowrap',
             }}
             onClick={() => {
-              alert('Añadir a la lista');
+              alert('EEEEE');
               setIsOpen(false);
             }}
           >
@@ -61,7 +61,7 @@ const OptionsMenu: React.FC = () => {
               whiteSpace: 'nowrap',
             }}
             onClick={() => {
-              alert('Mas informacion');
+              alert('QUEEEE');
               setIsOpen(false);
             }}
           >

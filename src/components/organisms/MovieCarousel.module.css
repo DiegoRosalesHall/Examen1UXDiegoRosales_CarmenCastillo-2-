@@ -1,0 +1,30 @@
+.movieCar-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.movieCar-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: inline-flex;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  width: 100%;
+}
+
+.movieCar-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin: 10px;
+}
+
+.scrollButton {
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 2;
+}
