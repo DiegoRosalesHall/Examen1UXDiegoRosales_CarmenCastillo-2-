@@ -16,15 +16,16 @@
 }
 
 .MovieButton img {
-  height: 12vw;
+  height: 14vw;
   width: 25vw;
   border: none;
 }
 
 @media (max-width: 767px) {
   .MovieButton img {
-    height: 20vw; 
-    width: 40vw;
+    height: 32vw; 
+    width: 50vw;
+    padding: -2px;
   }
 
 }

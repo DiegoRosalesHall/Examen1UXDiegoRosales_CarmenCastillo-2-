@@ -13,7 +13,7 @@
 
 .imgTop {
   height: 150px;
-  margin-top: 200px;
+  margin-top: 100px;
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -54,9 +54,15 @@
   border: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .MovieButtonTop img {
     height: 40vw;
     width: 30vw;
   }
+
+  .imgTop {
+    margin-top: 20px;
+    align-items: center;
+  }
+
 }

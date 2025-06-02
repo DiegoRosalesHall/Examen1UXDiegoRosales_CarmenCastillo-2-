@@ -21,7 +21,7 @@
 
 @media (max-width: 767px) {
   .MovieButton img {
-    height: 40vw; 
-    width: 30vw;
+    height: 50vw; 
+    width: 40vw;
   }
 }
