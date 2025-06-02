@@ -3,8 +3,10 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import MovieButton from "@/components/atoms/MovieButton";
+import MovieButtonTop from "@/components/atoms/MovieButtonTop";
 import OptionsMenu from "@/components/atoms/OptionMenu";
 import MovieWidget from "@/components/molecules/MovieWidget";
+import MovieWidgetTop from "@/components/molecules/MovieWidgetTop";
 import Navbar from "@/components/molecules/Navbar";
 import style from "@/components/molecules/Navbar.module.css";
 import Carrusel from "@/components/organisms/carrusel";
@@ -58,6 +60,30 @@ export default function Home() {
     '../img/continuarviendo1.webp',
     '../img/continuarviendo2.webp'
   ];
+  const top10 = [
+     '../img/dest4.webp',
+     '../img/dest11.webp',
+     '../img/solo7.webp',
+     '../img/dest1.webp',
+     '../img/solo8.webp',
+     '../img/solo15.webp',
+     '../img/solo9.webp',
+     '../img/dest12.webp',
+     '../img/solo18.webp',
+     '../img/solo10.webp',
+  ];
+  const topIcons = [
+    '../img/1.webp',
+    '../img/2.webp',
+    '../img/3.webp',
+    '../img/4.webp',
+    '../img/5.webp',
+    '../img/6.webp',
+    '../img/7.webp',
+    '../img/8.webp',
+    '../img/9.webp',
+    '../img/10.webp',
+  ]
 
   return (
     //FrontEnd
@@ -117,7 +143,7 @@ export default function Home() {
           <div >
             <h2 style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)', fontWeight: 'bold', color: 'white', textAlign:"left", paddingLeft:"1vw", paddingTop:"1vw" }}>Destacados </h2>
               <div className="col">
-                <MovieCarousel imagenes={Destacados} tipo="normal" />
+                <MovieCarousel imagenes={Destacados} tipo="normal" top={top10} />
               </div>
           </div>
         </div>
@@ -125,7 +151,7 @@ export default function Home() {
           <div >
             <h2 style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)', fontWeight: 'bold', color: 'white', textAlign:"left", paddingLeft:"1vw" }}>Solo para ti </h2>
               <div className="col">
-                <MovieCarousel imagenes={SoloParaTi} tipo="normal" />
+                <MovieCarousel imagenes={SoloParaTi} tipo="normal" top={top10}/>
               </div>
           </div>
         </div>
@@ -133,9 +159,19 @@ export default function Home() {
           <div >
             <h2 style={{ fontSize: 'clamp(1rem, 2.5vw, 2rem)', fontWeight: 'bold', color: 'white', textAlign:"left", paddingLeft:"1vw" }}> Continuar viendo </h2>
               <div className="col">
-                <MovieCarousel imagenes={continuarViendo} tipo="wide"/>
+                <MovieCarousel imagenes={continuarViendo} tipo="wide" top={top10}/>
               </div>
-              
+          </div>
+        </div>
+        <div className="row align-items-center gx-0">
+          <div className="col-6 col-lg-4 d-flex justify-content-start ps-4 order-1 order-lg-1">
+            <img src="/img/top10.webp" alt="Logo" style={{ width :"600px", height: "200px" }} />
+          </div>
+        </div>
+        <div className="row align-items-center gx-0">
+          <div>
+            
+              <MovieCarousel imagenes = {top10} tipo = "top" top={topIcons}   />
           </div>
         </div>
       </div>

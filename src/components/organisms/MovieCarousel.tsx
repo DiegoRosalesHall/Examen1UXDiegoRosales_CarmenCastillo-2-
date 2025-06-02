@@ -3,13 +3,15 @@ import MovieWidget from '../molecules/MovieWidget';
 import BotonAtomico from '../atoms/button';
 import styles from './MovieCarousel.module.css';
 import MovieWidgetWide from '../molecules/MovieWidgetWide';
+import MovieWidgetTop from '../molecules/MovieWidgetTop';
 
 interface MovieCarouselProps {
   imagenes: string[];
+  top: string[]
   tipo :string;
 }
 
-const MovieCarousel: React.FC<MovieCarouselProps> = ({ imagenes, tipo }) => {
+const MovieCarousel: React.FC<MovieCarouselProps> = ({ imagenes, tipo, top }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: 'prev' | 'next') => {
@@ -84,6 +86,37 @@ else if(tipo === "wide"){
     </div>
   );
 }
+  else if(tipo === "top"){
+    return(
+      <div className={styles.movieCarWrapper}>
+  <BotonAtomico
+    clase={`${styles.scrollButton} ${styles.left}`}
+    dataTarget="#movieCar"
+    dataSlide="prev"
+    index={0}
+    onSelect={() => scroll('prev')}
+  />
+
+  <div className={styles.movieCarContainer} ref={scrollRef}>
+    {imagenes.map((img, i) => (
+      <div key={i} className={styles.movieCarItem}>
+        <MovieWidgetTop clase="MovieButtonTop" img={img} top={top[i]} />
+      </div>
+    ))}
+  </div>
+
+  <BotonAtomico
+    clase={`${styles.scrollButton} ${styles.right}`}
+    dataTarget="#movieCar"
+    dataSlide="next"
+    index={0}
+    onSelect={() => scroll('next')}
+  />
+</div>
+
+    );
+  }
+
 };
 
 export default MovieCarousel;

@@ -1,0 +1,62 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.topWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.imgTop {
+  height: 150px;
+  margin-top: 200px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.wrapper:hover .imgTop {
+  transform: scale(1.1);
+}
+
+.buttonWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.options {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 10;
+}
+
+.MovieButtonTop {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 2px;
+  cursor: pointer;
+  height: auto;
+  object-fit: contain;
+  transition: border 0.3s ease;
+}
+
+.MovieButtonTop:hover {
+  border: 2px solid white;
+}
+
+.MovieButtonTop img {
+  height: 22.5vw;
+  width: 15vw;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .MovieButtonTop img {
+    height: 40vw;
+    width: 30vw;
+  }
+}
