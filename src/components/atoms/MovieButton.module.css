@@ -4,9 +4,24 @@
   padding: 2px;
   cursor: pointer;
   transition: border 0.3s ease, transform 0.3s ease;
+  height: auto; 
+  object-fit: contain;
+}
+
+.MovieButton img {
+  height: 22.5vw;
+  width: 15vw;
+  border: none;
 }
 
 .MovieButton:hover {
   border: 2px solid white;
   transform: scale(1.03);
+}
+
+@media (max-width: 767px) {
+  .MovieButton img {
+    height: 40vw; 
+    width: 30vw;
+  }
 }

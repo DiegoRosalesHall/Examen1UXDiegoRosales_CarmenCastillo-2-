@@ -4,9 +4,27 @@
   padding: 2px;
   cursor: pointer;
   transition: border 0.3s ease, transform 0.3s ease;
+  position: relative;
+  border: none;
+  background: none;
+  display: inline-block;
 }
 
 .MovieButton:hover {
   border: 2px solid white;
   transform: scale(1.03);
+}
+
+.MovieButton img {
+  height: 12vw;
+  width: 25vw;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .MovieButton img {
+    height: 20vw; 
+    width: 40vw;
+  }
+
 }
