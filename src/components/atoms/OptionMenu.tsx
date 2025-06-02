@@ -48,7 +48,7 @@ const OptionsMenu: React.FC = () => {
               whiteSpace: 'nowrap',
             }}
             onClick={() => {
-              alert('EEEEE');
+              window.open("https://youtu.be/k0DqRstCgj4?feature=shared", "_blank"); //de sus mejores canciones btw
               setIsOpen(false);
             }}
           >
@@ -61,7 +61,7 @@ const OptionsMenu: React.FC = () => {
               whiteSpace: 'nowrap',
             }}
             onClick={() => {
-              alert('QUEEEE');
+              window.open("https://media.diariouno.com.ar/adjuntos/298/imagenes/005/231/0005231169.gif", "_blank");
               setIsOpen(false);
             }}
           >
