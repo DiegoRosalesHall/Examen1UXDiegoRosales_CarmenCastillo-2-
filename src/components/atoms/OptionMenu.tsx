@@ -61,7 +61,7 @@ const OptionsMenu: React.FC = () => {
               whiteSpace: 'nowrap',
             }}
             onClick={() => {
-              window.open("https://media.diariouno.com.ar/adjuntos/298/imagenes/005/231/0005231169.gif", "_blank");
+              window.open("https://youtu.be/arjy2v7zEI0?feature=shared", "_blank");
               setIsOpen(false);
             }}
           >
