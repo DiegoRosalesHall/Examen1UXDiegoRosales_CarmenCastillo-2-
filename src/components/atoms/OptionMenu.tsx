@@ -48,7 +48,7 @@ const OptionsMenu: React.FC = () => {
               whiteSpace: 'nowrap',
             }}
             onClick={() => {
-              window.open("https://youtu.be/k0DqRstCgj4?feature=shared", "_blank"); //de sus mejores canciones btw
+              window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank"); //de sus mejores canciones btw
               setIsOpen(false);
             }}
           >
